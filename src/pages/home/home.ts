@@ -18,7 +18,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   navigatetosecond():void{
-    this.navCtrl.push('SecondPage')
+    this.navCtrl.push('SecondPage',  {message:'hello from the home page'});
   }
 
   ionViewDidLoad() {

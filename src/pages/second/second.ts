@@ -14,8 +14,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'second.html',
 })
 export class SecondPage {
+  message:string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private navCtrl: NavController, private navParams: NavParams) {
+  this.message=  this.navParams.get('message');
+  alert(this.message);
   }
 
   ionViewDidLoad() {
