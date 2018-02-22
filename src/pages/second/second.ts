@@ -24,6 +24,10 @@ export class SecondPage {
     this.navCtrl.pop();
   }
 
+  navigateToThirdPage():void{
+    this.navCtrl.push('ThirdPage');
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SecondPage');
   }
