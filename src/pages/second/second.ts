@@ -18,7 +18,10 @@ export class SecondPage {
 
   constructor(private navCtrl: NavController, private navParams: NavParams) {
   this.message=  this.navParams.get('message');
-  alert(this.message);
+  }
+
+  navigationBack():void{
+    this.navCtrl.pop();
   }
 
   ionViewDidLoad() {
