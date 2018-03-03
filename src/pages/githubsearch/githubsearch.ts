@@ -14,13 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'githubsearch.html',
 })
 export class GithubsearchPage {
-  username:string="Arjun"
+  username:string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private navCtrl: NavController, private navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GithubsearchPage');
   }
 
+  getUserInformation():void{
+    this.navCtrl.push('ProfileSearchResultsPage',{username:this.username});
+  }
 }
