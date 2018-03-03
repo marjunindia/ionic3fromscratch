@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'githubsearch.html',
 })
 export class GithubsearchPage {
+  username:string="Arjun"
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
