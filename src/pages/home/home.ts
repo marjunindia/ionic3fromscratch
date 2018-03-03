@@ -21,6 +21,15 @@ export class HomePage {
     this.navCtrl.push('SecondPage',  {message:'hello from the home page'});
   }
 
+  navigatetogreeting():void{
+    this.navCtrl.push('GreetingPage');
+  }
+  navigatetogithubsearch():void{
+    this.navCtrl.push('GithubsearchPage');
+    
+  }
+
+
   ionViewDidLoad() {
     console.log('Fired only when a view is stored in memory. This event is NOT fired on entering a view that is already cached. It’s a nice place for init related tasks.');
   }
