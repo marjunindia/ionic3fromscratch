@@ -5,7 +5,7 @@ const userList:User[]=[
         name:'arjun',
         company:'PWH',
         location:'uk',
-        url:'asdasdasd.com'
+        url:'asdasdasd.com',
         email:'asdsad'
         
     },
@@ -13,8 +13,10 @@ const userList:User[]=[
         name:'aravind',
         company:'PWHasdasd',
         location:'us',
-        url:'asdasdasd.com'
+        url:'asdasdasd.com',
         email:'sadasddsas.com'
         
     }
-]
+];
+
+export const USER_LIST=userList;

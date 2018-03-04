@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {GithubServiceProvider} from '../../providers/github-service/github-service';
 
 /**
  * Generated class for the ProfileSearchResultsPage page.
@@ -16,13 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class ProfileSearchResultsPage {
   username:string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private github:GithubServiceProvider,public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  getUserInformation():void{
+    this.github.mockGetUserInformation(this.username).subscribe(data=>console.log(data));
   }
 
   ionViewDidLoad() {
     this.username=this.navParams.get('username');
-    console.log( this.username);
-    
+
+    if(this.username){
+      this.getUserInformation();
+    }
   }
 
 
