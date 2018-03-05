@@ -1,10 +1,11 @@
-import{User} from '../models/user.interface';
+import {User} from '../models/user.interface';
 
-const userList:User[]=[
+const user:User[]=[
     {
         name:'arjun',
         company:'PWH',
         location:'uk',
+        bio:'asas',
         url:'asdasdasd.com',
         email:'asdsad'
         
@@ -13,10 +14,11 @@ const userList:User[]=[
         name:'aravind',
         company:'PWHasdasd',
         location:'us',
+        bio:'asas',
         url:'asdasdasd.com',
         email:'sadasddsas.com'
         
     }
 ];
 
-export const USER_LIST=userList;
+export const USER_LIST=user;
